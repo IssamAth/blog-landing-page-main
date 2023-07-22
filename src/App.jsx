@@ -4,14 +4,14 @@ import LOGO from '../src/images/logo.svg'
 
 const App = () => {
   return (
-    <div>
+    <div className=' mx-0'>
 
       {/* SHOWCASE PART */}
 
-      <div className=' flex-col bg-pOneBackground h-80v rounded-es-7xl text-white'>
+      <div className=' flex-col bg-pOneBackground h-90v rounded-es-7xl text-white'>
         {/* CONTAINER */}
-        <div className=' container mx-auto'>
-          {/* FLEX ITEM */}
+        <div className=' container mx-auto h-full'>
+          {/* FLEX ITEM 1 */}
           <div className=' flex flex-row justify-between pt-6'>
             <div className=' flex flex-row space-x-12'>
               {/* LOGO */}
@@ -30,6 +30,10 @@ const App = () => {
                 <div className=' '>Sign Up</div>
               </div>
             </div>
+          </div>
+          {/* FLEX ITEM 2 */}
+          <div className=' text-center mt-60'>
+            <div><h1>A modern publishing platform</h1></div>
           </div>
         </div>
       </div>
