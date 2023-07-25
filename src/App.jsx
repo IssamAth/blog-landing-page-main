@@ -15,8 +15,8 @@ const ResponsiveImage = () => {
   }, []);
 
   return (
-    <div className=''>
-      {width >= 600 ? <img src={IMG2} alt="" /> : <img src={IMG1} alt="" />}
+    <div className=' md:w-40v'>
+      {width >= 600 ? <img src={IMG2} className='' alt="" /> : <img src={IMG1} alt="" />}
     </div>
   );
 };
@@ -77,36 +77,38 @@ const App = () => {
       {/* SECOND PART */}
       <section className='my-20'>
         {/* container */}
-        <div className="container">
+        <div className="container mx-auto">
           {/* TITLE */}
           <div className='text-center font-bold text-2xlnHalf'>
             <h2>Designed for the future</h2>
           </div>
           {/* FLEX ITEM */}
-          <div className='flex flex-col mt-10'>
+          <div className='flex flex-col mt-10 md:flex-row-reverse md:relative md:items-center'>
             {/* IMAGE */}
-            <ResponsiveImage />
-          </div>
-          {/* BOTH ARTICLES */}
-          <div className=' flex flex-col my-10'>
-            {/* FIRST ARTICLE */}
-            <article className=' '>
-              <div className=' text-center text-2xlnHalf font-bold my-4'>
-                <h3>Introducing an extensible editor</h3>
-              </div>
-              <div className=' text-center text-bigbase'>
-                <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
-              </div>
-            </article>
-            {/* SECOND ARTICLE */}
-            <article className=' mt-10'>
-              <div className=' text-center text-2xlnHalf font-bold my-4'>
-                <h3>Robust content management</h3>
-              </div>
-              <div className=' text-center text-bigbase'>
-                <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
-              </div>
-            </article>
+            <div className=''>
+              <ResponsiveImage />
+            </div>
+            {/* BOTH ARTICLES */}
+            <div className=' flex flex-col my-10 md:w-35v'>
+              {/* FIRST ARTICLE */}
+              <article className=' '>
+                <div className=' text-center text-2xlnHalf font-bold my-4 md:text-left'>
+                  <h3>Introducing an extensible editor</h3>
+                </div>
+                <div className=' text-center text-bigbase md:text-left'>
+                  <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+                </div>
+              </article>
+              {/* SECOND ARTICLE */}
+              <article className=' mt-10'>
+                <div className=' text-center text-2xlnHalf font-bold my-4 md:text-left'>
+                  <h3>Robust content management</h3>
+                </div>
+                <div className=' text-center text-bigbase md:text-left'>
+                  <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
