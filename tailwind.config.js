@@ -60,7 +60,8 @@ module.exports = {
       'articlebg': '#fafafa',
       'footer': '#2d314e',
       'copyRight': '#9196ab',
-      'pOneBackground': '#ff806d'
+      'pOneBackground': '#ff806d',
+      'bloo':'#3a3b59'
     }),
     columns: {
       auto: 'auto',
@@ -125,7 +126,10 @@ module.exports = {
       64: '16rem',
       72: '18rem',
       80: '20rem',
+      85: '23rem',
       96: '24rem',
+      98: '26rem',
+      100: '30rem'
     },
     animation: {
       none: 'none',
@@ -215,7 +219,9 @@ module.exports = {
       xl: '0.75rem',
       '2xl': '1rem',
       '3xl': '1.5rem',
-      '4xl': '2rem',
+      '4xl': '3rem',
+      '5xl': '4rem',
+      '6xl': '5rem',
       '7xl': '7rem',
       full: '9999px',
     },

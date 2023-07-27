@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import LOGO from '../src/images/logo.svg';
 import IMG1 from '../src/images/illustration-editor-mobile.jpg';
 import IMG2 from '../src/images/illustration-editor-desktop.svg';
+import IMG3 from '../src/images/illustration-phones-cropped.svg';
 
 const getWidth = () => document.documentElement.clientWidth;
 
@@ -15,7 +16,7 @@ const ResponsiveImage = () => {
   }, []);
 
   return (
-    <div className=' md:w-40v'>
+    <div className=' md:w-55v'>
       {width >= 600 ? <img src={IMG2} className='' alt="" /> : <img src={IMG1} alt="" />}
     </div>
   );
@@ -75,7 +76,7 @@ const App = () => {
       </div>
 
       {/* SECOND PART */}
-      <section className='my-20'>
+      <section className='my-20 md:overflow-hidden mb-56'>
         {/* container */}
         <div className="container mx-auto">
           {/* TITLE */}
@@ -85,30 +86,54 @@ const App = () => {
           {/* FLEX ITEM */}
           <div className='flex flex-col mt-10 md:flex-row-reverse md:relative md:items-center'>
             {/* IMAGE */}
-            <div className=''>
+            <div className=' md:-mr-40 xl:-mr-72 lg:-mr-55 '>
               <ResponsiveImage />
             </div>
             {/* BOTH ARTICLES */}
-            <div className=' flex flex-col my-10 md:w-35v'>
+            <div className=' flex flex-col my-10 md:w-35v md:pr-14'>
               {/* FIRST ARTICLE */}
               <article className=' '>
-                <div className=' text-center text-2xlnHalf font-bold my-4 md:text-left'>
+                <div className=' text-center text-2xlnHalf font-bold my-4 md:text-left md:text-2xl lg:text-2xlnHalf'>
                   <h3>Introducing an extensible editor</h3>
                 </div>
-                <div className=' text-center text-bigbase md:text-left'>
+                <div className=' text-center text-bigbase md:text-left md:text-bsm lg:text-bigbase'>
                   <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
                 </div>
               </article>
               {/* SECOND ARTICLE */}
               <article className=' mt-10'>
-                <div className=' text-center text-2xlnHalf font-bold my-4 md:text-left'>
+                <div className=' text-center text-2xlnHalf font-bold my-4 md:text-left md:text-2xl lg:text-2xlnHalf'>
                   <h3>Robust content management</h3>
                 </div>
-                <div className=' text-center text-bigbase md:text-left'>
+                <div className=' text-center text-bigbase md:text-left md:text-bsm lg:text-bigbase'>
                   <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
                 </div>
               </article>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* THIRD PART */}
+      <section className=' bg-bloo rounded-tr-6xl rounded-bl-6xl md:h-72 lg:h-80 xl:h-85 2xl:h-98'>
+        {/* CONTAINER */}
+        <div className=' container mx-auto md:h-full'>
+          {/* FLEX ITEM */}
+          <div className=' flex flex-col md:flex-row md:justify-between md:items-center md:h-full'>
+            {/* IMAGE PHONE */}
+            <div className=' -mt-44 md:w-30v md:-mt-14'>
+              <img src={IMG3} className=' w-auto 2xl:max-h-100' alt="" />
+            </div>
+            {/* ARTICLE */}
+            <article className=' my-5 md:my-0'>
+              <div className=' text-center text-3.5xl font-bold text-white my-6 md:text-left md:text-2xlnHalf'>
+                <h2>State of the Art Infrastructure</h2>
+              </div>
+              {/* PARAGRAPH */}
+              <div className=' text-center text-white mb-20 md:w-40v md:text-left md:mb-0'>
+                <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
