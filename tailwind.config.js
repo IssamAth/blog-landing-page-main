@@ -61,7 +61,8 @@ module.exports = {
       'footer': '#2d314e',
       'copyRight': '#9196ab',
       'pOneBackground': '#ff806d',
-      'bloo':'#3a3b59'
+      'bloo':'#3a3b59',
+      'footer':'#24242c'
     }),
     columns: {
       auto: 'auto',

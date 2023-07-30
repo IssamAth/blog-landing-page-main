@@ -158,7 +158,7 @@ const App = () => {
 
 
       {/* FIFTH PART */}
-      <section className=' mt-16 mb-10 md:mt-28 md:overflow-hidden'>
+      <section className=' mt-16 mb-20 md:mt-28 md:overflow-hidden'>
         {/* CONTAINER */}
         <div className=' container mx-auto'>
           {/* FLEX ITEM */}
@@ -169,7 +169,7 @@ const App = () => {
             </div>
             {/* BOTH ARTICLES */}
             <div className=' flex flex-col md:w-40v xl:w-35v'>
-               {/* ARTICLE ONE */}
+              {/* ARTICLE ONE */}
               <article className=' mt-5 md:my-0'>
                 <div className=' text-center text-2xlnHalf font-bold mb-5 md:text-left md:text-xlnHalf xl:text-2xlnHalf'>
                   <h2>Free, open, simple</h2>
@@ -193,6 +193,43 @@ const App = () => {
           </div>
         </div>
       </section>
+      {/* SIXTH PART */}
+      <footer className=' bg-footer text-neutral-400 py-6 rounded-tr-6xl md:py-16'>
+        {/* CONTAINER */}
+        <div className="container mx-auto">
+          {/* FLEX ITEM */}
+          <div className='flex flex-col max-md:items-center text-center space-y-7 md:flex-row md:space-y-0 md:justify-between'>
+            {/* LOGO */}
+            <div className=' mt-14 mb-10 md:mt-0 md:mb-0'>
+              <img src={LOGO} alt="" />
+            </div>
+            {/* PRODUCT */}
+            <ul className=' flex flex-col space-y-1'>
+              <li className=' mb-5 font-bold text-white'>Product</li>
+              <li><a href="/">Overview</a></li>
+              <li><a href="/about">Pricing</a></li>
+              <li><a href="/services">Marketplace</a></li>
+              <li><a href="/contact">Features</a></li>
+              <li><a href="/contact">Integrations</a></li>
+            </ul>
+            {/* COMPANY */}
+            <ul className=' flex flex-col space-y-1'>
+              <li className=' mb-5 font-bold text-white'>Company</li>
+              <li><a href="/">About</a></li>
+              <li><a href="/about">Team</a></li>
+              <li><a href="/services">Blog</a></li>
+              <li><a href="/contact">Careers</a></li>
+            </ul>
+            {/* CONNECT */}
+            <ul className=' flex flex-col space-y-1'>
+              <li className=' mb-5 font-bold text-white'>Connect</li>
+              <li><a href="/">Contact</a></li>
+              <li><a href="/about">Newsletter</a></li>
+              <li><a href="/services">Linkedin</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
