@@ -48,24 +48,24 @@ const App = () => {
         {/* CONTAINER */}
         <div className='container mx-auto h-full flex-col'>
           {/* FLEX ITEM 1 */}
-          <div className='flex flex-row justify-between pt-12 md:pt-6'>
+          <div className='flex flex-row justify-between pt-12 md:pt-6 text-navtext font-bold'>
             <div className='flex flex-row space-x-12'>
               {/* LOGO */}
               <div className=''>
                 <img src={LOGO} className="h-8 md:h-9" alt="" />
               </div>
               {/* NAV BAR */}
-              <nav className='hidden md:flex pt-2 space-x-8'>
-                <div>Product</div>
-                <div>Company</div>
-                <div>Connect</div>
+              <nav className='hidden md:flex pt-2 space-x-8 '>
+                <a className='md:hover:underline md:hover:cursor-pointer hover:text-white'>Product</a>
+                <a className='md:hover:underline md:hover:cursor-pointer hover:text-white'>Company</a>
+                <a className='md:hover:underline md:hover:cursor-pointer hover:text-white'>Connect</a>
               </nav>
               {/* Humbugerger */}
             </div>
 
             <div className='hidden md:flex space-x-5 pt-2'>
-              <div>Login</div>
-              <div className='bg-white text-pink-900 flex py-2 -mt-2 px-5 rounded-3xl'>
+              <div className='md:hover:cursor-pointer md:hover:text-white'>Login</div>
+              <div className='bg-white text-signUp flex py-2 -mt-2 px-5 rounded-3xl md:hover:cursor-pointer md:hover:bg-red-300 md:hover:text-white'>
                 <div className=''>Sign Up</div>
               </div>
             </div>
@@ -75,18 +75,18 @@ const App = () => {
             <div className=''>
               <h1>A modern publishing platform</h1>
             </div>
-            <div className='text-bigbase text-center px-4 pt-4 md:pt-6 md:text-lg'>
+            <div className='text-bigbase text-center px-4 pt-4 md:pt-6 md:text-lg text-navtext'>
               <p>Grow your audience and build your online brand</p>
             </div>
           </div>
           {/* FLEX ITEM 3 */}
           <div className='flex flex-row justify-around mt-12 md:justify-center md:space-x-4'>
             {/* FIRST BUTTON */}
-            <div className='flex justify-center items-center bg-white text-pOneBackground py-2 px-4 rounded-3xl font-extrabold md:px-5'>
+            <div className='flex justify-center items-center bg-white text-pOneBackground py-2 px-4 rounded-3xl font-extrabold md:px-5 md:hover:cursor-pointer md:hover:bg-red-300 md:hover:text-white'>
               <div>Start for Free</div>
             </div>
             {/* FIRST BUTTON */}
-            <div className='flex justify-center items-center bg-transparent border-white border-1 text-white py-2 px-4 rounded-3xl font-extrabold md:px-5'>
+            <div className='flex justify-center items-center bg-transparent border-white border-1 text-white py-2 px-4 rounded-3xl font-extrabold md:px-5 md:cursor-pointer md:hover:bg-white md:hover:text-learnMore'>
               <div>Learn More</div>
             </div>
           </div>
@@ -198,7 +198,7 @@ const App = () => {
         {/* CONTAINER */}
         <div className="container mx-auto">
           {/* FLEX ITEM */}
-          <div className='flex flex-col max-md:items-center text-center space-y-7 md:flex-row md:space-y-0 md:justify-between'>
+          <div className='flex flex-col max-md:items-center text-center space-y-7 md:flex-row md:space-y-0 md:justify-between md:text-left'>
             {/* LOGO */}
             <div className=' mt-14 mb-10 md:mt-0 md:mb-0'>
               <img src={LOGO} alt="" />
@@ -206,26 +206,26 @@ const App = () => {
             {/* PRODUCT */}
             <ul className=' flex flex-col space-y-1'>
               <li className=' mb-5 font-bold text-white'>Product</li>
-              <li><a href="/">Overview</a></li>
-              <li><a href="/about">Pricing</a></li>
-              <li><a href="/services">Marketplace</a></li>
-              <li><a href="/contact">Features</a></li>
-              <li><a href="/contact">Integrations</a></li>
+              <li><a href="/" className=' md:hover:underline'>Overview</a></li>
+              <li><a href="/about" className='md:hover:underline'>Pricing</a></li>
+              <li><a href="/services" className='md:hover:underline'>Marketplace</a></li>
+              <li><a href="/contact" className='md:hover:underline'>Features</a></li>
+              <li><a href="/contact" className='md:hover:underline'>Integrations</a></li>
             </ul>
             {/* COMPANY */}
             <ul className=' flex flex-col space-y-1'>
               <li className=' mb-5 font-bold text-white'>Company</li>
-              <li><a href="/">About</a></li>
-              <li><a href="/about">Team</a></li>
-              <li><a href="/services">Blog</a></li>
-              <li><a href="/contact">Careers</a></li>
+              <li><a href="/" className='md:hover:underline'>About</a></li>
+              <li><a href="/about" className='md:hover:underline'>Team</a></li>
+              <li><a href="/services" className='md:hover:underline'>Blog</a></li>
+              <li><a href="/contact" className='md:hover:underline'>Careers</a></li>
             </ul>
             {/* CONNECT */}
             <ul className=' flex flex-col space-y-1'>
               <li className=' mb-5 font-bold text-white'>Connect</li>
-              <li><a href="/">Contact</a></li>
-              <li><a href="/about">Newsletter</a></li>
-              <li><a href="/services">Linkedin</a></li>
+              <li><a href="/" className='md:hover:underline'>Contact</a></li>
+              <li><a href="/about" className='md:hover:underline'>Newsletter</a></li>
+              <li><a href="/services" className='md:hover:underline'>Linkedin</a></li>
             </ul>
           </div>
         </div>

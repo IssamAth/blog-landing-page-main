@@ -62,7 +62,10 @@ module.exports = {
       'copyRight': '#9196ab',
       'pOneBackground': '#ff806d',
       'bloo':'#3a3b59',
-      'footer':'#24242c'
+      'footer':'#24242c',
+      'navtext':'#ffdbd7',
+      'signUp':'#d96770',
+      'learnMore':'#fa586b',
     }),
     columns: {
       auto: 'auto',
