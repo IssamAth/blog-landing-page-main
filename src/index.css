@@ -11,6 +11,60 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
-/* *{
-    overflow: hidden;
-} */
+
+  
+  @media (max-width: 767px) {
+    #showcase {
+        background-color: red; /* Use a visible color as a fallback */
+        background-image: url(images/bg-pattern-intro-mobile.svg);
+        background-position: 40% 20%;
+        background-repeat: no-repeat;
+        background-size:280%
+      }
+  }
+
+  @media (min-width: 768px) {
+    #showcase {
+        background-color: red; /* Use a visible color as a fallback */
+        background-image: url(images/bg-pattern-intro-desktop.svg);
+        background-position: 10% 55%;
+        background-repeat: no-repeat;
+      }
+  }
+
+  .hamburger {
+
+    display: relative;
+    width: 28px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+ }
+
+
+ .hamburger .bar, .hamburger::after, .hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 5px 0px;
+    transition: 0.8s;
+ }
+
+
+ .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 1px);
+    background-color: grey;
+ }
+
+ .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -3px);
+    background-color: grey;
+ }
+
+ .hamburger.is-active .bar {
+    opacity: 0;
+ }

@@ -25,6 +25,7 @@ const ResponsiveImage = () => {
 };
 
 const ResponsiveImageTwo = () => {
+    
   const [width1, setWidth1] = useState(getWidth());
 
   useEffect(() => {
@@ -41,6 +42,15 @@ const ResponsiveImageTwo = () => {
 };
 
 const App = () => {
+  const showNav = () => {
+    const menuBtns = document.querySelector('.menu-btn')
+    // const navbars = document.querySelector('.menumob')
+  // const room = document.querySelector('.room')
+
+  menuBtns.classList.toggle('is-active')
+  // navbars.classList.toggle('is-active')
+  // room.classList.toggle('hide')
+};
   return (
     <div className=' mx-0'>
       {/* SHOWCASE PART */}
@@ -60,7 +70,6 @@ const App = () => {
                 <a className='md:hover:underline md:hover:cursor-pointer hover:text-white'>Company</a>
                 <a className='md:hover:underline md:hover:cursor-pointer hover:text-white'>Connect</a>
               </nav>
-              {/* Humbugerger */}
             </div>
 
             <div className='hidden md:flex space-x-5 pt-2'>
@@ -69,6 +78,10 @@ const App = () => {
                 <div className=''>Sign Up</div>
               </div>
             </div>
+            {/* Humberguer Menu */}
+            <button class="menu-btn hamburger mt-2 md:hidden" onClick={() => showNav()}>
+              <div class="bar"></div>
+            </button>
           </div>
           {/* FLEX ITEM 2 */}
           <div className='text-center mt-52 text-3.5xl md:text-6xl align-middle md:mt-80'>
