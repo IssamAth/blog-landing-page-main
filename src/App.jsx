@@ -25,7 +25,7 @@ const ResponsiveImage = () => {
 };
 
 const ResponsiveImageTwo = () => {
-    
+
   const [width1, setWidth1] = useState(getWidth());
 
   useEffect(() => {
@@ -45,18 +45,18 @@ const App = () => {
   const showNav = () => {
     const menuBtns = document.querySelector('.menu-btn')
     // const navbars = document.querySelector('.menumob')
-  // const room = document.querySelector('.room')
+    // const room = document.querySelector('.room')
 
-  menuBtns.classList.toggle('is-active')
-  // navbars.classList.toggle('is-active')
-  // room.classList.toggle('hide')
-};
+    menuBtns.classList.toggle('is-active')
+    // navbars.classList.toggle('is-active')
+    // room.classList.toggle('hide')
+  };
   return (
     <div className=' mx-0'>
       {/* SHOWCASE PART */}
-      <div className=' bg-pOneBackground h-94v rounded-es-7xl text-white'>
+      <div id='showcase' className=' bg-pOneBackground h-94v rounded-es-7xl text-white'>
         {/* CONTAINER */}
-        <div className='container mx-auto h-full flex-col'>
+        <div className='container mx-auto h-full flex flex-col'>
           {/* FLEX ITEM 1 */}
           <div className='flex flex-row justify-between pt-12 md:pt-6 text-navtext font-bold'>
             <div className='flex flex-row space-x-12'>
@@ -83,24 +83,27 @@ const App = () => {
               <div class="bar"></div>
             </button>
           </div>
-          {/* FLEX ITEM 2 */}
-          <div className='text-center mt-52 text-3.5xl md:text-6xl align-middle md:mt-80'>
-            <div className=''>
-              <h1>A modern publishing platform</h1>
+          {/* ---- */}
+          <div className="flex flex-col h-full justify-center">
+            {/* FLEX ITEM 2 */}
+            <div className='text-center text-3.5xl md:text-6xl '>
+              <div className=''>
+                <h1>A modern publishing platform</h1>
+              </div>
+              <div className='text-bigbase text-center px-4 pt-4 md:pt-6 md:text-lg text-navtext'>
+                <p>Grow your audience and build your online brand</p>
+              </div>
             </div>
-            <div className='text-bigbase text-center px-4 pt-4 md:pt-6 md:text-lg text-navtext'>
-              <p>Grow your audience and build your online brand</p>
-            </div>
-          </div>
-          {/* FLEX ITEM 3 */}
-          <div className='flex flex-row justify-around mt-12 md:justify-center md:space-x-4'>
-            {/* FIRST BUTTON */}
-            <div className='flex justify-center items-center bg-white text-pOneBackground py-2 px-4 rounded-3xl font-extrabold md:px-5 md:hover:cursor-pointer md:hover:bg-red-300 md:hover:text-white'>
-              <div>Start for Free</div>
-            </div>
-            {/* FIRST BUTTON */}
-            <div className='flex justify-center items-center bg-transparent border-white border-1 text-white py-2 px-4 rounded-3xl font-extrabold md:px-5 md:cursor-pointer md:hover:bg-white md:hover:text-learnMore'>
-              <div>Learn More</div>
+            {/* FLEX ITEM 3 */}
+            <div className='flex flex-row justify-around mt-12 md:justify-center md:space-x-4'>
+              {/* FIRST BUTTON */}
+              <div className='flex justify-center items-center bg-white text-pOneBackground py-2 px-4 rounded-3xl font-extrabold md:px-5 md:hover:cursor-pointer md:hover:bg-red-300 md:hover:text-white'>
+                <div>Start for Free</div>
+              </div>
+              {/* FIRST BUTTON */}
+              <div className='flex justify-center items-center bg-transparent border-white border-1 text-white py-2 px-4 rounded-3xl font-extrabold md:px-5 md:cursor-pointer md:hover:bg-white md:hover:text-learnMore'>
+                <div>Learn More</div>
+              </div>
             </div>
           </div>
         </div>
