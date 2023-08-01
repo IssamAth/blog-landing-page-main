@@ -5,6 +5,7 @@ import IMG2 from '../src/images/illustration-editor-desktop.svg';
 import IMG3 from '../src/images/illustration-phones-cropped.svg';
 import IMG4 from '../src/images/illustration-laptop-desktop-cropped.svg';
 import IMG5 from '../src/images/illustration-laptop-mobile-cropped.svg';
+import Mobnav from './components/mobnav/Mobnav';
 
 const getWidth = () => document.documentElement.clientWidth;
 
@@ -44,11 +45,11 @@ const ResponsiveImageTwo = () => {
 const App = () => {
   const showNav = () => {
     const menuBtns = document.querySelector('.menu-btn')
-    // const navbars = document.querySelector('.menumob')
+    const navbars = document.querySelector('.menumob')
     // const room = document.querySelector('.room')
 
     menuBtns.classList.toggle('is-active')
-    // navbars.classList.toggle('is-active')
+    navbars.classList.toggle('is-active')
     // room.classList.toggle('hide')
   };
   return (
@@ -84,7 +85,13 @@ const App = () => {
             </button>
           </div>
           {/* ---- */}
-          <div className="flex flex-col h-full justify-center">
+          <div className="flex flex-col h-full justify-center relative overflow-x-hidden">
+         
+
+             <div className=' menumob absolute w-full h-fit'>
+             <Mobnav />
+             </div>
+         
             {/* FLEX ITEM 2 */}
             <div className='text-center text-3.5xl md:text-6xl '>
               <div className=''>
@@ -149,7 +156,7 @@ const App = () => {
       </section>
 
       {/* THIRD PART */}
-      <section className=' bg-bloo rounded-tr-6xl rounded-bl-6xl md:h-72 lg:h-80 xl:h-85 2xl:h-98'>
+      <section id='bloo' className=' bg-bloo rounded-tr-6xl rounded-bl-6xl md:h-72 lg:h-80 xl:h-85 2xl:h-98'>
         {/* CONTAINER */}
         <div className=' container mx-auto md:h-full'>
           {/* FLEX ITEM */}

@@ -32,6 +32,28 @@ body {
       }
   }
 
+
+  @media (max-width: 767px) {
+   #bloo {
+       /* Use a visible color as a fallback */
+       background-image: url(images/bg-pattern-circles.svg);
+       background-position: 40% -1300%;
+       background-repeat: no-repeat;
+       background-size:140%;
+     }
+ }
+
+ @media (min-width: 768px) {
+   #bloo {
+   
+      background-image: url(images/bg-pattern-circles.svg);
+       background-position: -50% 80%;
+       background-repeat: no-repeat;
+       background-size:70%;
+
+     }
+ }
+
   .hamburger {
 
     display: relative;
@@ -68,3 +90,14 @@ body {
  .hamburger.is-active .bar {
     opacity: 0;
  }
+
+
+ .menumob {
+   top:0;
+   left:100%;
+   transition: 0.8s;
+}
+
+.menumob.is-active {
+   left:0;
+}

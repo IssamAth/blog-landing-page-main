@@ -1,0 +1,12 @@
+.menumob {
+    /* Your other styles */
+    /* Add transition property for smooth height changes */
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+  }
+  
+  .menumob .expanded {
+    /* Set max-height for the expanded state */
+    max-height: 200px; /* Adjust the value to fit your content */
+  }
+  

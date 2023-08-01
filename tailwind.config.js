@@ -66,6 +66,8 @@ module.exports = {
       'navtext':'#ffdbd7',
       'signUp':'#d96770',
       'learnMore':'#fa586b',
+      'navbar':'#efeff1',
+      'lastSign':'#ff4f5a'
     }),
     columns: {
       auto: 'auto',
