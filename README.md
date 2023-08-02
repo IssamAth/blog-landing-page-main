@@ -47,6 +47,10 @@ The Blog Landing Page is a modern and responsive landing page for a blog publish
 
 - **Robust Content Management:** The platform provides flexible content management options, allowing users to categorize, format, and organize their posts efficiently.
 
+## Author
+
+This project was built by Aymen Issame Athamena.
+
 ## License
 
 All Rights Reserved. This project and its code are private and proprietary, and any unauthorized use, reproduction, or distribution of the code, in whole or in part, is strictly prohibited without prior written permission from the project owner.
