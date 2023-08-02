@@ -248,30 +248,30 @@ const App = () => {
      data-aos-offset="300"
      data-aos-duration="3000">
               <li className=' mb-5 font-bold text-white'>Product</li>
-              <li><a href="/" className=' md:hover:underline'>Overview</a></li>
-              <li><a href="/about" className='md:hover:underline'>Pricing</a></li>
-              <li><a href="/services" className='md:hover:underline'>Marketplace</a></li>
-              <li><a href="/contact" className='md:hover:underline'>Features</a></li>
-              <li><a href="/contact" className='md:hover:underline'>Integrations</a></li>
+              <li><a href="#" className=' md:hover:underline'>Overview</a></li>
+              <li><a href="#" className='md:hover:underline'>Pricing</a></li>
+              <li><a href="#" className='md:hover:underline'>Marketplace</a></li>
+              <li><a href="#" className='md:hover:underline'>Features</a></li>
+              <li><a href="#" className='md:hover:underline'>Integrations</a></li>
             </ul>
             {/* COMPANY */}
             <ul className=' flex flex-col space-y-1' data-aos="fade-left"
      data-aos-offset="300"
      data-aos-duration="3000">
               <li className=' mb-5 font-bold text-white'>Company</li>
-              <li><a href="/" className='md:hover:underline'>About</a></li>
-              <li><a href="/about" className='md:hover:underline'>Team</a></li>
-              <li><a href="/services" className='md:hover:underline'>Blog</a></li>
-              <li><a href="/contact" className='md:hover:underline'>Careers</a></li>
+              <li><a href="#" className='md:hover:underline'>About</a></li>
+              <li><a href="#" className='md:hover:underline'>Team</a></li>
+              <li><a href="#" className='md:hover:underline'>Blog</a></li>
+              <li><a href="#" className='md:hover:underline'>Careers</a></li>
             </ul>
             {/* CONNECT */}
             <ul className=' flex flex-col space-y-1' data-aos="fade-left"
      data-aos-offset="1000"
      data-aos-duration="3000">
               <li className=' mb-5 font-bold text-white'>Connect</li>
-              <li><a href="/" className='md:hover:underline'>Contact</a></li>
-              <li><a href="/about" className='md:hover:underline'>Newsletter</a></li>
-              <li><a href="/services" className='md:hover:underline'>Linkedin</a></li>
+              <li><a href="#" className='md:hover:underline'>Contact</a></li>
+              <li><a href="#" className='md:hover:underline'>Newsletter</a></li>
+              <li><a href="#" className='md:hover:underline'>Linkedin</a></li>
             </ul>
           </div>
         </div>
