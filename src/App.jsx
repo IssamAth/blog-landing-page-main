@@ -6,6 +6,11 @@ import IMG3 from '../src/images/illustration-phones-cropped.svg';
 import IMG4 from '../src/images/illustration-laptop-desktop-cropped.svg';
 import IMG5 from '../src/images/illustration-laptop-mobile-cropped.svg';
 import Mobnav from './components/mobnav/Mobnav';
+import 'aos/dist/aos.css'; // Import the AOS CSS file
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const getWidth = () => document.documentElement.clientWidth;
 
@@ -19,7 +24,8 @@ const ResponsiveImage = () => {
   }, []);
 
   return (
-    <div className=' md:w-55v '>
+    <div className=' md:w-55v ' data-aos="fade-up"
+    data-aos-duration="3000">
       {width >= 767 ? <img src={IMG2} className='' alt="" /> : <img src={IMG1} alt="" />}
     </div>
   );
@@ -36,7 +42,8 @@ const ResponsiveImageTwo = () => {
   }, []);
 
   return (
-    <div className=''>
+    <div className='' data-aos="fade-up"
+    data-aos-duration="3000" data-aos-delay="1000">
       {width1 >= 767 ? <img src={IMG4} className='' alt="" /> : <img src={IMG5} alt="" />}
     </div>
   );
@@ -85,7 +92,8 @@ const App = () => {
             </button>
           </div>
           {/* ---- */}
-          <div className="flex flex-col h-full justify-center relative overflow-x-hidden">
+          <div className="flex flex-col h-full justify-center relative overflow-x-hidden " data-aos="fade-up"
+     data-aos-duration="3000">
          
 
              <div className=' menumob absolute w-full h-fit'>
@@ -121,7 +129,8 @@ const App = () => {
         {/* container */}
         <div className="container mx-auto">
           {/* TITLE */}
-          <div className='text-center font-bold text-2xlnHalf'>
+          <div className='text-center font-bold text-2xlnHalf' data-aos="fade-up"
+     data-aos-duration="3000">
             <h2>Designed for the future</h2>
           </div>
           {/* FLEX ITEM */}
@@ -131,7 +140,8 @@ const App = () => {
               <ResponsiveImage />
             </div>
             {/* BOTH ARTICLES */}
-            <div className=' flex flex-col my-10 md:w-45v md:pr-0 lg:pr-14 xl:pr-0'>
+            <div className=' flex flex-col my-10 md:w-45v md:pr-0 lg:pr-14 xl:pr-0' data-aos="fade-up"
+     data-aos-duration="3000">
               {/* FIRST ARTICLE */}
               <article className=' '>
                 <div className=' text-center text-2xlnHalf font-bold my-4 md:text-left md:text-2xl lg:text-2xlnHalf'>
@@ -163,10 +173,14 @@ const App = () => {
           <div className=' flex flex-col md:flex-row md:justify-between md:items-center md:h-full'>
             {/* IMAGE PHONE */}
             <div className=' -mt-44 md:w-30v md:-mt-14'>
-              <img src={IMG3} className=' w-auto 2xl:max-h-100' alt="" />
+              <img src={IMG3} className=' w-auto 2xl:max-h-100' data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-duration="3000" alt="" />
             </div>
             {/* ARTICLE */}
-            <article className=' my-5 md:my-0'>
+            <article className=' my-5 md:my-0' data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-duration="3000">
               <div className=' text-center text-3.5xl font-bold text-white my-6 md:text-left md:text-2xlnHalf'>
                 <h2>State of the Art Infrastructure</h2>
               </div>
@@ -191,7 +205,8 @@ const App = () => {
               <ResponsiveImageTwo />
             </div>
             {/* BOTH ARTICLES */}
-            <div className=' flex flex-col md:w-40v xl:w-35v'>
+            <div className=' flex flex-col md:w-40v xl:w-35v' data-aos="fade-up"
+     data-aos-duration="3000" data-aos-delay="1000">
               {/* ARTICLE ONE */}
               <article className=' mt-5 md:my-0'>
                 <div className=' text-center text-2xlnHalf font-bold mb-5 md:text-left md:text-xlnHalf xl:text-2xlnHalf'>
@@ -223,11 +238,15 @@ const App = () => {
           {/* FLEX ITEM */}
           <div className='flex flex-col max-md:items-center text-center space-y-7 md:flex-row md:space-y-0 md:justify-between md:text-left'>
             {/* LOGO */}
-            <div className=' mt-14 mb-10 md:mt-0 md:mb-0'>
+            <div className=' mt-14 mb-10 md:mt-0 md:mb-0' data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-duration="3000">
               <img src={LOGO} alt="" />
             </div>
             {/* PRODUCT */}
-            <ul className=' flex flex-col space-y-1'>
+            <ul className=' flex flex-col space-y-1' data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-duration="3000">
               <li className=' mb-5 font-bold text-white'>Product</li>
               <li><a href="/" className=' md:hover:underline'>Overview</a></li>
               <li><a href="/about" className='md:hover:underline'>Pricing</a></li>
@@ -236,7 +255,9 @@ const App = () => {
               <li><a href="/contact" className='md:hover:underline'>Integrations</a></li>
             </ul>
             {/* COMPANY */}
-            <ul className=' flex flex-col space-y-1'>
+            <ul className=' flex flex-col space-y-1' data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-duration="3000">
               <li className=' mb-5 font-bold text-white'>Company</li>
               <li><a href="/" className='md:hover:underline'>About</a></li>
               <li><a href="/about" className='md:hover:underline'>Team</a></li>
@@ -244,7 +265,9 @@ const App = () => {
               <li><a href="/contact" className='md:hover:underline'>Careers</a></li>
             </ul>
             {/* CONNECT */}
-            <ul className=' flex flex-col space-y-1'>
+            <ul className=' flex flex-col space-y-1' data-aos="fade-left"
+     data-aos-offset="1000"
+     data-aos-duration="3000">
               <li className=' mb-5 font-bold text-white'>Connect</li>
               <li><a href="/" className='md:hover:underline'>Contact</a></li>
               <li><a href="/about" className='md:hover:underline'>Newsletter</a></li>

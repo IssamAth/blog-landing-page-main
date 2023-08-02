@@ -101,3 +101,15 @@ body {
 .menumob.is-active {
    left:0;
 }
+
+/* Add this to your CSS file or within your React component */
+@media (max-width: 767px) {
+   .menumob {
+     overflow-x: hidden;
+   }
+   body,
+   html {
+     overflow-x: hidden;
+   }
+ }
+ 
